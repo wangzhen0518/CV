@@ -1,0 +1,50 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{enumerate}
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{tabularx}
+% \bibliography{papers}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{geometry}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\linespread{1.0}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{汪震}{
+    邮箱: \email{wangzhen0518@mail.ustc.edu.cn} \\
+    电话：\phone{+86-15805601276}
+}
+
+\vspace{-10pt}
+
+\input{sections/education}
+% \input{sections/interest}
+\input{sections/publications}
+\input{sections/experience}
+\input{sections/awards}
+\input{sections/skills}
+% \input{sections/scores}
+
+\end{document}
